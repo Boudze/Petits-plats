@@ -1,0 +1,249 @@
+@import url("https://fonts.googleapis.com/css2?family=Anton&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: 0;
+}
+
+body {
+  background: #e5e5e5;
+}
+
+/* Hero-banner */
+.hero-banner {
+  position: relative;
+  background-image: url("https://via.placeholder.com/1200x600"); /* Replace with your image URL */
+  background-size: cover;
+  background-position: center;
+  height: 60vh; /* Full height */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  color: white;
+  background-image: url(assets/plats-banner.jpg);
+  background-repeat: none;
+}
+.search-bar {
+  margin: 0 auto;
+  width: 60%;
+}
+
+.search-bar input {
+  width: 100%;
+  height: 70px;
+  padding-left: 30px;
+  font-family: "Manrope", sans-serif;
+  font-size: clamp(1.2rem, 2vw, 1.6rem);
+  border-radius: 10px;
+}
+
+.card_section {
+  margin-top: 100px;
+  display: grid;
+  grid-template-columns: repeat(3, 380px);
+  place-content: center;
+  gap: 60px;
+}
+
+/* Button */
+.btn {
+  background: #f8f9fa;
+  color: black;
+}
+
+.card {
+  max-width: 400px;
+  border-radius: 10px;
+  overflow: hidden;
+  background-color: #fff;
+}
+
+.card-body {
+  padding: 20px;
+  height: 500px;
+}
+
+.card_title_recette {
+  font-family: Anton;
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 27.1px;
+  text-align: left;
+  color: black;
+  margin-top: 10px;
+}
+
+.card_info_recette h3 {
+  font-family: Manrope;
+  font-size: 12px;
+  font-weight: 700;
+  line-height: 16.39px;
+  letter-spacing: 0.09em;
+  text-align: left;
+  color: gray;
+  margin-top: 20px;
+}
+
+.card_info_recette p {
+  font-family: Manrope;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 19.12px;
+  text-align: left;
+  color: black;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  display: -webkit-box;
+  -webkit-line-clamp: 6;
+  -webkit-box-orient: vertical;
+  text-align: justify;
+}
+
+.card_info_ingredients h3 {
+  font-family: Manrope;
+  font-size: 12px;
+  font-weight: 700;
+  line-height: 16.39px;
+  letter-spacing: 0.09em;
+  text-align: left;
+  color: grey;
+  margin-top: 20px;
+}
+
+.card_info_ingredients ul {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px 0;
+  font-size: clamp(0.9rem, 1vw, 0.9rem);
+  padding: 0;
+  margin-top: 10px;
+}
+
+.card_info_ingredients ul li {
+  display: flex;
+  flex-direction: column;
+  width: 45%;
+}
+
+.span-ingredient {
+  font-family: Manrope;
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 19.12px;
+  text-align: left;
+  color: black;
+}
+
+.span-unit {
+  font-family: Manrope;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 19.12px;
+  text-align: left;
+  color: gray;
+}
+
+.text-muted {
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  padding: 5px 10px;
+  border-radius: 10px;
+  font-size: 0.8rem;
+  font-family: "Manrope", sans-serif;
+  background-color: #ffd15b;
+}
+
+.card-container img {
+  height: 253px;
+  object-fit: cover;
+  width: 100%;
+}
+
+.dropdown-main {
+  z-index: 100;
+  position: relative;
+  width: 180px;
+  height: 60px;
+}
+
+.dropdown-button {
+  padding: 15px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  height: 60px;
+  width: 100%;
+  background-color: #fff;
+  font-size: 1.1rem;
+  font-weight: 500;
+  font-family: "Manrope", sans-serif;
+  border: none;
+}
+
+.dropdown-button:hover {
+  background-color: #ffd15b;
+  color: black;
+}
+
+.tag {
+  width: 190px;
+  height: 60px;
+  border-radius: 10px;
+  padding: 15px;
+  font-family: "Manrope", sans-serif;
+  background-color: #ffd15b;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.tag-cross {
+  cursor: pointer;
+}
+.tag-container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  margin-top: 20px;
+}
+
+.dropdown-item {
+  cursor: pointer;
+}
+
+.lead-banner {
+  color: #ffd15b;
+  font-family: "Anton", sans-serif;
+  font-weight: 100;
+  text-align: center;
+  font-size: clamp(1.5rem, 4vw, 2.8rem);
+  text-transform: uppercase;
+}
+
+.header-logo img {
+  max-width: 200px;
+  position: absolute;
+  left: 50px;
+  top: 50px;
+}
+
+.recipe-counter {
+  flex-grow: 1;
+  line-height: 60px;
+  text-align: right;
+  font-size: 1.2rem;
+  font-weight: 400;
+  font-family: "Anton", sans-serif;
+  width: 180px;
+}
+
+.tag-container {
+  max-width: 1320px;
+  margin: 0 auto;
+}
